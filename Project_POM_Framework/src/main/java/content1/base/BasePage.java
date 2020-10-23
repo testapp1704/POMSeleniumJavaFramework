@@ -79,7 +79,8 @@ public util.Xls_Reader xls = new util.Xls_Reader(System.getProperty("user.dir")+
 		}
 		else if(bType.equals("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("Chromedriver"));
+			 System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\chromedriver.exe");
+		 //	System.setProperty("webdriver.chrome.driver", prop.getProperty("Chromedriver"));
 			driver=new ChromeDriver();
 		}
 		else if (bType.equals("IE"))

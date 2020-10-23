@@ -26,7 +26,7 @@ public class LoginTest extends BasePage
 		openBrowser("Chrome");
 		LoginPage lp = PageFactory.initElements(driver, LoginPage.class);
 		test.log(Status.INFO, "Enter the credentials ");
-	    lp.doLogin("suyash.trivedi@ttc.com", "Travel1234");
+	    lp.doLogin("suyash.trivedi", "Travel1234");
 		test.log(Status.PASS, "Login Successfully ");
 	}
 	//@Test(enabled=false) 
