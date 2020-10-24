@@ -34,7 +34,6 @@ import com.aventstack.extentreports.Status;
 import listener.WebEventListener;
 import pages.Constants;
 import reports.ExtentManager;
-import util.Xls_Reader;
 
 
 public class BasePage 
@@ -46,7 +45,7 @@ ExtentReports reports = ExtentManager.getReport(System.getProperty("user.dir")+"
 ExtentTest test ;
 public Properties prop;
 public String testName=null;
-public util.Xls_Reader xls = new util.Xls_Reader(System.getProperty("user.dir")+"//Data.xlsx");
+
 
 	public BasePage() 
 	{}
@@ -71,6 +70,7 @@ public util.Xls_Reader xls = new util.Xls_Reader(System.getProperty("user.dir")+
 			}
 		}
 	}
+	/*****************************Open Browser ********************************/
 	public void openBrowser(String bType)
 	{		
 		if(bType.equals("Mozilla")) 
@@ -94,11 +94,6 @@ public util.Xls_Reader xls = new util.Xls_Reader(System.getProperty("user.dir")+
 		driver.get(prop.getProperty("QA_Env"));
 	}	
 	/*****************************Common Functionality ********************************/	
-	public void clickOnSaveAndPublish(WebElement element) throws InterruptedException
-	{
-		element.click();
-  		Thread.sleep(3000);	
-    }
 	public void scrollDownThePage() throws AWTException, InterruptedException  
 	{
 		   Robot robot = new Robot();
