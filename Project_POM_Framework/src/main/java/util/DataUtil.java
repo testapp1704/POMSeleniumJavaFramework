@@ -2,7 +2,7 @@ package util;
 
 import java.util.Hashtable;
 
-import content1.pages.Constants;
+import pages.Constants;
 
 public class DataUtil {
 	

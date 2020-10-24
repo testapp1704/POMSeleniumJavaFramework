@@ -1,4 +1,4 @@
-package content1.testcases;
+package testcases;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.Hashtable;
@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import content1.base.BasePage;
-import content1.pages.HomePage;
-import content1.pages.LoginPage;
 
+import base.BasePage;
+import pages.HomePage;
+import pages.LoginPage;
 import reports.ExtentManager;
 
     public class TestCase1 extends BasePage{

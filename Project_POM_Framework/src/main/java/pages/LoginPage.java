@@ -1,4 +1,4 @@
-package content1.pages;
+package pages;
 import java.io.IOException;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,8 @@ import org.testng.annotations.AfterMethod;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import content1.base.BasePage;
+
+import base.BasePage;
 import reports.ExtentManager;
 
 public class LoginPage extends BasePage

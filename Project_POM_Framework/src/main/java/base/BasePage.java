@@ -1,4 +1,4 @@
-package content1.base;
+package base;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -30,8 +30,9 @@ import org.testng.annotations.AfterMethod;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import content1.pages.Constants;
+
 import listener.WebEventListener;
+import pages.Constants;
 import reports.ExtentManager;
 import util.Xls_Reader;
 

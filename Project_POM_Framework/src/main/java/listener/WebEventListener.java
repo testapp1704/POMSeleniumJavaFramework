@@ -17,7 +17,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
-import content1.base.BasePage;
+
+import base.BasePage;
 
 public class WebEventListener extends BasePage implements WebDriverEventListener {
 
