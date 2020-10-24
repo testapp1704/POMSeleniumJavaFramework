@@ -28,7 +28,7 @@ public class TestCases extends BasePage
 		openBrowser("Chrome");
 		RegisterPage registerPage = PageFactory.initElements(driver, RegisterPage.class);
 		test.log(Status.PASS, "Open chrome browser Successfully ");
-		registerPage.enterRegistrationDetails("Suh","Tridi","suyashtestframework@gmail.com","suyashtestframework@gmail.com","Pa$$word","Pa$$word", "07404837568");
+		registerPage.enterRegistrationDetails("Suh","Tridi","suyashtestfr@gmail.com","suyashtestfr@gmail.com","Pa$$word","Pa$$word", "07404837568");
 	}
 	
 	@Test(priority=2)

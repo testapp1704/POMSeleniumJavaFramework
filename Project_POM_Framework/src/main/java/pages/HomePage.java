@@ -32,8 +32,10 @@ public class HomePage extends BasePage
 		super(driver);
 	}
 
-	public void searchProduct(String searchproduct)  
+	public void searchProduct(String searchproduct) 
 	{
+		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		    wait.until(ExpectedConditions.elementToBeClickable(SEARCH_FIELD));
 		    SEARCH_FIELD.sendKeys(searchproduct);
 		    SEARCH_BTN.click();
 									
